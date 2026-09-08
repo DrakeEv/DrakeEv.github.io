@@ -169,6 +169,10 @@ body {
   gap: 1.2rem;
 }
 
+#experience .card-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .card {
   background: #1e293b;
   padding: 1.5rem;
@@ -198,6 +202,16 @@ body {
 
 .project-card {
   min-height: 220px;
+}
+
+.experience-card {
+  min-height: 220px;
+}
+
+.card p.job-meta {
+  color: #a855f7;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
 }
 
 .card-link {
