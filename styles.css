@@ -200,6 +200,18 @@ body {
   min-height: 220px;
 }
 
+.card-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #c084fc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
 .contact-section {
   text-align: center;
 }
