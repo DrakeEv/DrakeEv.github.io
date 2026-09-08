@@ -3,246 +3,388 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Drake Everett | IT & Cybersecurity Portfolio</title>
+  <title>Drake Everett — IT, Systems & Cybersecurity</title>
+  <meta name="description" content="Drake Everett — Computer Science graduate specializing in IT support, system administration, networking, and cybersecurity." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header class="header">
-    <nav class="navbar">
-      <h1 class="logo">Drake Everett</h1>
+  <div class="noise-overlay" aria-hidden="true"></div>
 
-      <button class="menu-btn" id="menuBtn">☰</button>
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a href="#top" class="brand">Drake<span>Everett</span></a>
 
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+      <nav class="site-nav" id="siteNav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+        </button>
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
   </header>
 
   <main>
 
-<section id="home" class="hero">
-  <div class="hero-content hero-layout">
+    <section class="hero wrap">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="kicker">Open to Entry-Level Opportunities</p>
+          <h1>IT Support · System Administration · Software Development · Cybersecurity</h1>
+          <p class="lede">
+            I'm Drake — a Computer Science graduate (Lamar University, Cum Laude)
+            based in Harlingen, TX. I troubleshoot systems, secure networks, and
+            build software, and I'm currently stacking CompTIA certifications
+            (A+ earned, Network+ in progress) on my way toward a cybersecurity career.
+          </p>
+          <div class="hero-actions">
+            <a href="Drake_Everett_Resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+              Download Résumé
+            </a>
+            <a href="#projects" class="btn btn-ghost">View Projects</a>
+          </div>
+          <div class="hero-meta">
+            <span>📍 Harlingen, TX</span>
+            <span class="dot">·</span>
+            <span>CompTIA A+ Certified</span>
+            <span class="dot">·</span>
+            <span>B.S. Computer Science</span>
+          </div>
+        </div>
 
-    <div class="hero-text">
-      <p class="eyebrow">IT Support • System Administration • Software Development • Cybersecurity</p>
-      <h2>Computer Science graduate building practical skills in IT and cybersecurity.</h2>
-      <p>
-        I’m Drake Everett, an aspiring IT professional from Harlingen, Texas.
-        I enjoy troubleshooting systems, building PCs, working with Linux,
-        learning networking, and developing technical projects.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#projects" class="btn primary">View Projects</a>
-        <a href="#contact" class="btn secondary">Contact Me</a>
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="orbit-photo">
+            <img src="cropped-dropped-grad-pic.jpg" alt="Drake Everett" />
+          </div>
+          <div class="badge-float badge-1">A+</div>
+          <div class="badge-float badge-2">Network+</div>
+          <div class="badge-float badge-3">&lt;/&gt;</div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <img src="cropped-dropped-grad-pic.jpg" alt="Photo of Drake Everett" class="profile-photo">
-
-  </div>
-</section>
-
-    <section id="about" class="section">
-      <h2>About Me</h2>
-      <p>
-        I have a background in Computer Science — a B.S. from Lamar University
-        (Cum Laude) and an A.S. from Texas State Technical College — plus
-        hands-on hardware experience and a growing focus on IT support, system
-        administration, and cybersecurity. My goal is to build a strong
-        technical career where I can solve real problems, support users,
-        secure systems, and keep improving every day.
+    <section id="about" class="section wrap reveal">
+      <p class="eyebrow">About</p>
+      <h2>Grounded in fundamentals, focused on impact.</h2>
+      <p class="section-lede">
+        I hold a B.S. in Computer Science from Lamar University (Cum Laude) and
+        an A.S. in Computer Science from Texas State Technical College. Outside
+        the classroom, I've spent over a decade building and repairing PCs,
+        and the last several years helping students at TSTC land jobs — work
+        that taught me as much about process and follow-through as any
+        coursework did. I'm now applying that same rigor to IT support, system
+        administration, and cybersecurity, with a Master's in Cybersecurity on
+        the horizon.
       </p>
     </section>
 
-    <section id="skills" class="section">
-      <h2>Skills</h2>
+    <section id="skills" class="section wrap reveal">
+      <p class="eyebrow">Skills</p>
+      <h2>What I bring to the table.</h2>
 
-      <div class="card-grid">
-        <div class="card">
+      <div class="skills-grid">
+        <div class="skill-card">
           <h3>IT Support</h3>
-          <ul>
-            <li>Windows troubleshooting</li>
-            <li>Hardware diagnostics</li>
-            <li>PC building</li>
-            <li>Ticketing & remote support</li>
-          </ul>
+          <div class="tags">
+            <span>Windows / Mac / Linux</span>
+            <span>Hardware Diagnostics</span>
+            <span>PC Building & Repair</span>
+            <span>Ticketing Systems</span>
+            <span>Remote Desktop Support</span>
+            <span>BIOS/UEFI Configuration</span>
+          </div>
         </div>
 
-        <div class="card">
+        <div class="skill-card">
           <h3>Networking</h3>
-          <ul>
-            <li>TCP/IP</li>
-            <li>DNS, DHCP, NAT</li>
-            <li>Wireshark</li>
-            <li>Basic routing</li>
-          </ul>
+          <div class="tags">
+            <span>TCP/IP</span>
+            <span>DNS · DHCP · NAT</span>
+            <span>Wireshark</span>
+            <span>Basic Routing</span>
+            <span>VPN & Tunneling</span>
+          </div>
         </div>
 
-        <div class="card">
+        <div class="skill-card">
           <h3>System Administration</h3>
-          <ul>
-            <li>Active Directory (users & permissions)</li>
-            <li>VMware virtualization</li>
-            <li>Databases</li>
-            <li>Documentation & asset tracking</li>
-          </ul>
+          <div class="tags">
+            <span>Active Directory</span>
+            <span>VMware Virtualization</span>
+            <span>Databases</span>
+            <span>Documentation</span>
+            <span>Asset Tracking</span>
+          </div>
         </div>
 
-        <div class="card">
+        <div class="skill-card">
           <h3>Cybersecurity</h3>
-          <ul>
-            <li>Linux firewall labs</li>
-            <li>Packet analysis</li>
-            <li>Security fundamentals</li>
-            <li>CompTIA A+ Certified · Network+ (in progress)</li>
-          </ul>
+          <div class="tags">
+            <span>Linux Firewalls (UFW/Netfilter)</span>
+            <span>Packet Analysis</span>
+            <span>SQLi / CSRF Mitigation</span>
+            <span>Security Fundamentals</span>
+          </div>
         </div>
 
-        <div class="card">
+        <div class="skill-card">
           <h3>Development</h3>
-          <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Java</li>
-            <li>Python</li>
-            <li>C++</li>
-            <li>Git/GitHub</li>
-          </ul>
+          <div class="tags">
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>Java</span>
+            <span>C++</span>
+            <span>HTML / CSS</span>
+            <span>Git / GitHub</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Professional</h3>
+          <div class="tags">
+            <span>Agile / Jira</span>
+            <span>Client Support</span>
+            <span>Documentation</span>
+            <span>100+ WPM</span>
+            <span>Leadership</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-row">
+        <div class="cert-pill cert-earned">
+          <strong>CompTIA A+</strong>
+          <span>Certified · expires 09/2029</span>
+        </div>
+        <div class="cert-pill">
+          <strong>CompTIA Network+</strong>
+          <span>In progress</span>
+        </div>
+        <div class="cert-pill cert-future">
+          <strong>Security+</strong>
+          <span>Planned next</span>
         </div>
       </div>
     </section>
 
-    <section id="experience" class="section">
-      <h2>Experience</h2>
+    <section id="experience" class="section wrap reveal">
+      <p class="eyebrow">Experience</p>
+      <h2>Where I've made an impact.</h2>
 
-      <div class="card-grid">
-        <div class="card experience-card">
-          <h3>Career Advisor</h3>
-          <p class="job-meta">Texas State Technical College — Harlingen, TX (Hybrid) · Jul 2022 – Present</p>
-          <ul>
-            <li>Guided students through the transition from coursework to industry employment via resume reviews, job search coaching, mock interviews, and LinkedIn optimization</li>
-            <li>Project Manager for the Interview Practicum across 7 semesters, expanding it from 2 to 3 days and growing attendance over 50%</li>
-            <li>Built and maintained a shared drive to centralize documents and streamline onboarding for the statewide team</li>
-            <li>Increased known graduate placement rate from 82.5% to 94.8% year-over-year through improved tracking and follow-up</li>
-          </ul>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Career Advisor</h3>
+              <span class="timeline-date">Jul 2022 – Present</span>
+            </div>
+            <p class="timeline-org">Texas State Technical College — Harlingen, TX (Hybrid)</p>
+            <ul>
+              <li>Guided students through the transition from coursework to industry employment via resume reviews, job search coaching, mock interviews, and LinkedIn optimization.</li>
+              <li>Project Manager for the Interview Practicum across 7 semesters — expanded it from 2 to 3 days and grew attendance by over 50%.</li>
+              <li>Identified inefficiencies in the department's file-sharing system and built a replacement shared drive used by the statewide team.</li>
+              <li>Increased known graduate placement rate from 82.5% to 94.8% year-over-year through improved tracking and follow-up.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Career Services Staff Assistant</h3>
+              <span class="timeline-date">Jan 2022 – Jul 2022</span>
+            </div>
+            <p class="timeline-org">Texas State Technical College — Harlingen, TX (Hybrid)</p>
+            <ul>
+              <li>Provided front-desk technical support, helping students troubleshoot online scheduling and appointment portal access.</li>
+              <li>Promoted to Career Advisor after completing an A.S. in Computer Science, based on demonstrated reliability and readiness for expanded responsibilities.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="projects" class="section wrap reveal">
+      <p class="eyebrow">Projects</p>
+      <h2>Things I've built.</h2>
+
+      <div class="projects-grid">
+
+        <article class="project-card featured">
+          <div class="project-top">
+            <h3>The Hollow</h3>
+            <div class="project-links">
+              <a href="https://drakeev.github.io/TheHollow/" target="_blank" rel="noopener" aria-label="Live demo">Live Demo ↗</a>
+              <a href="https://github.com/DrakeEv/TheHollow" target="_blank" rel="noopener" aria-label="Source code">Code</a>
+            </div>
+          </div>
+          <p>A moody, first-person 3D exploration experience built with Three.js — wander a glowing forest and uncover memory fragments.</p>
+          <div class="tech-tags">
+            <span>Three.js</span><span>WebGL</span><span>JavaScript</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <h3>Lamar Event Management System</h3>
+            <div class="project-links">
+              <a href="https://github.com/DrakeEv/EventManagementLamarProject" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+          <p>Full-stack event management app with role-based approval and RSVP workflows. Group project, CPSC-4360.</p>
+          <div class="tech-tags">
+            <span>Node.js</span><span>Express</span><span>SQLite</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <h3>Password Strength Checker</h3>
+            <div class="project-links">
+              <a href="https://github.com/DrakeEv/Password-Strength-Checker" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+          <p>CLI tool that validates password character sets and estimates brute-force keyspace size.</p>
+          <div class="tech-tags">
+            <span>Python</span><span>Security</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <h3>Countdown Timer</h3>
+            <div class="project-links">
+              <a href="https://github.com/DrakeEv/PomodoroTimer" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+          <p>A simple browser-based countdown timer with start, pause, and reset controls.</p>
+          <div class="tech-tags">
+            <span>JavaScript</span><span>CSS</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <h3>Windows &amp; Linux Active Directory</h3>
+          </div>
+          <p>Created and managed Active Directory user accounts and permissions; explored Linux authentication internals (e.g. <code>/etc/shadow</code>).</p>
+          <div class="tech-tags">
+            <span>Active Directory</span><span>Linux</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <h3>Web Application Security Labs</h3>
+          </div>
+          <p>Demonstrated SQL injection and CSRF attacks in controlled labs, then implemented mitigations — prepared statements, anti-CSRF tokens, and SameSite cookies.</p>
+          <div class="tech-tags">
+            <span>AppSec</span><span>SQLi</span><span>CSRF</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <h3>Linux Network Security Labs</h3>
+          </div>
+          <p>Configured UFW firewall rules, built a basic Netfilter kernel-module firewall, and explored SSH/VPN tunneling around firewall restrictions.</p>
+          <div class="tech-tags">
+            <span>UFW</span><span>Netfilter</span><span>VPN</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <h3>PC &amp; Laptop Hardware Servicing</h3>
+          </div>
+          <p>10+ years building, upgrading, and repairing custom desktops and laptops — BIOS/UEFI tuning, thermal diagnostics, and ESD-safe repair practices.</p>
+          <div class="tech-tags">
+            <span>Hardware</span><span>Diagnostics</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <h3>Linux System Deployment</h3>
+          </div>
+          <p>Repurposed a 2012 MacBook with an SSD swap and Linux Mint, and installed Batocera Linux on a handheld gaming device — OS flashing, drivers, and performance tuning.</p>
+          <div class="tech-tags">
+            <span>Linux Mint</span><span>Batocera</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="education" class="section wrap reveal">
+      <p class="eyebrow">Education</p>
+      <h2>Academic background.</h2>
+
+      <div class="edu-grid">
+        <div class="edu-card">
+          <h3>B.S. in Computer Science</h3>
+          <p class="edu-school">Lamar University — Remote</p>
+          <p class="edu-meta">CGPA 3.565/4.0 · Cum Laude · March 2026</p>
         </div>
-
-        <div class="card experience-card">
-          <h3>Career Services Staff Assistant</h3>
-          <p class="job-meta">Texas State Technical College — Harlingen, TX (Hybrid) · Jan 2022 – Jul 2022</p>
-          <ul>
-            <li>Provided front-desk technical support, helping students troubleshoot online scheduling and appointment portal access</li>
-            <li>Promoted to Career Advisor after completing an A.S. in Computer Science, based on demonstrated reliability and readiness for expanded responsibilities</li>
-          </ul>
+        <div class="edu-card">
+          <h3>A.S. in Computer Science</h3>
+          <p class="edu-school">Texas State Technical College — Remote</p>
+          <p class="edu-meta">CGPA 3.242/4.0 · August 2022</p>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-
-      <div class="card-grid">
-        <div class="card project-card">
-          <h3>The Hollow</h3>
-          <p>
-            A moody first-person 3D exploration experience built with Three.js —
-            wander a glowing forest and uncover memory fragments.
-          </p>
-          <a href="https://drakeev.github.io/TheHollow/" target="_blank" rel="noopener" class="card-link">Play it →</a>
-        </div>
-
-        <div class="card project-card">
-          <h3>PC & Laptop Hardware Servicing</h3>
-          <p>
-            10+ years building, upgrading, and repairing custom desktops and
-            laptops — BIOS/UEFI tuning (Secure Boot, XMP/EXPO, undervolting)
-            and thermal diagnostics with tools like CPU-Z, Core Temp, and
-            MSI Afterburner.
-          </p>
-        </div>
-
-        <div class="card project-card">
-          <h3>Windows & Linux Active Directory</h3>
-          <p>
-            Created and managed Active Directory user accounts and
-            permissions; explored Linux authentication and access control
-            internals (e.g. /etc/shadow).
-          </p>
-        </div>
-
-        <div class="card project-card">
-          <h3>Web Application Security Labs</h3>
-          <p>
-            Demonstrated SQL injection and CSRF attacks in controlled lab
-            environments, then implemented mitigations including prepared
-            statements, anti-CSRF tokens, and SameSite cookies.
-          </p>
-        </div>
-
-        <div class="card project-card">
-          <h3>Linux Network Security Labs</h3>
-          <p>
-            Configured UFW firewall rules, built a basic Netfilter
-            kernel-module firewall, and explored how SSH/VPN tunneling can
-            route traffic around firewall restrictions.
-          </p>
-        </div>
-
-        <div class="card project-card">
-          <h3>Batocera Linux Handheld Upgrade</h3>
-          <p>
-            Installed and configured Batocera Linux on an Anbernic 35XXH
-            handheld gaming device, including OS flashing and performance
-            tuning.
-          </p>
-        </div>
-
-        <div class="card project-card">
-          <h3>Jigsaw Puzzle Game</h3>
-          <p>
-            Team software engineering project built with C++ and SFML,
-            featuring puzzle snapping, timers, audio settings, and save files.
-          </p>
-        </div>
-
-        <div class="card project-card">
-          <h3>Linux Mint Laptop Setup</h3>
-          <p>
-            Repurposed an older MacBook Pro with Linux Mint and troubleshot
-            Wi-Fi, software installation, system settings, and usability issues.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <h2>Contact</h2>
-      <p>
-        I’m open to IT support, help desk, network technician, junior system
-        administrator, and junior cybersecurity opportunities.
+    <section id="contact" class="section wrap reveal contact-section">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's talk.</h2>
+      <p class="section-lede">
+        I'm actively looking for entry-level IT support, system administration,
+        and cybersecurity opportunities. Reach out — I'd love to hear from you.
       </p>
 
-      <div class="contact-links">
-        <a href="mailto:drakeeeverett@gmail.com">drakeeeverett@gmail.com</a>
-        <a href="www.linkedin.com/in/drake-everett">LinkedIn</a>
-        <a href="https://github.com" target="_blank">GitHub</a>
+      <div class="contact-grid">
+        <a href="mailto:drakeeeverett@gmail.com" class="contact-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+          <span>drakeeeverett@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/drake-everett" target="_blank" rel="noopener" class="contact-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <span>linkedin.com/in/drake-everett</span>
+        </a>
+        <a href="https://github.com/DrakeEv" target="_blank" rel="noopener" class="contact-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.1 3.1 0 0 0-.9-2.4c3-.3 6-1.5 6-6.6a5.1 5.1 0 0 0-1.4-3.6 4.7 4.7 0 0 0-.1-3.5s-1.1-.4-3.6 1.3a12.3 12.3 0 0 0-6.4 0C6.9 2.1 5.8 2.5 5.8 2.5a4.7 4.7 0 0 0-.1 3.5A5.1 5.1 0 0 0 4.3 9.6c0 5 3 6.3 6 6.6a3.1 3.1 0 0 0-.9 2.4V22"/></svg>
+          <span>github.com/DrakeEv</span>
+        </a>
       </div>
     </section>
 
   </main>
 
-  <footer class="footer">
-    <p>&copy; 2026 Drake Everett. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>&copy; 2026 Drake Everett.</p>
+      <a href="Drake_Everett_Resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+    </div>
   </footer>
 
-  <button id="backToTop" class="back-to-top">↑</button>
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top">↑</button>
 
   <script src="script.js"></script>
 </body>
